@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "&#x27;True, True&#x27;"
+  - text: "&#x27;False, False&#x27;"
+  - text: "&#x27;False, True&#x27;"
+  - text: TypeMismatch Error
+  - text: "&#x27;True, False&#x27;"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/31241#comment
+status: Solved
+record: -1
+custom_name: "JavaScript: Loose vs Strict Equality"
+local_check: false

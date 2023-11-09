@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "false"
+  - text: 18 &gt;=18 &amp;&amp; -4 &gt; 100
+  - text: 5 &lt; 6
+  - text: true || 19 &lt; 0
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8890#comment
+status: Solved
+record: -1
+custom_name: What’s the big deal with conditions?
+local_check: false

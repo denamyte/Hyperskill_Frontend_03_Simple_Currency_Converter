@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - "str.substring(6,2)"
+  - "str.substr(6,2)"
+  - "str.slice(6,2)"
+options:
+  - tr
+  - me s
+  - Empty string
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/17782#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
