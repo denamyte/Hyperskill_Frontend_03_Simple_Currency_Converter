@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "<code>function sayHi = () =&gt; {<br> &amp;nbsp &amp;nbsp console.log('Hello\
+    \ world!');<br>}</code>"
+  - text: "<code>function mult (a, b) {<br> &amp;nbsp &amp;nbsp return a * b;<br>}</code>"
+  - text: "<code>let someName = () =&gt; {<br> &amp;nbsp &amp;nbsp console.log('You\
+    \ called a function someName!');<br>}</code>"
+  - text: "<code>let fullname(firstname, lastname) {<br> &amp;nbsp &amp;nbsp console.log(firstname\
+    \ + \" \" + lastname);<br>}</code>"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/24014#comment
+status: Solved
+record: -1
+local_check: false

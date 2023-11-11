@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "<pre><code class=\"language-js\">double(x) = function { return x * 2; } \n\
+    \ triple(x) = function { return x * 3; }</code></pre>"
+  - text: "<pre><code class=\"language-js\">let double = (x) =&gt; { return 2 * x; }\
+    \ \n let triple = (x) =&gt; { return 3 * x; }</code></pre>"
+  - text: "<pre><code class=\"language-js\">let double = function(x) { return x * 2;\
+    \ } \n let triple = function(x) { return x * 3; }</code></pre>"
+  - text: "<pre><code class=\"language-js\">function double(x) { return 2 * x; } \n\
+    \ function triple(x) { return 3 * x; }</code></pre>"
+  - text: "<pre><code class=\"language-js\">function = double(x) { return 2 * x; } \n\
+    \ function = triple(x) { return 3 * x; }</code></pre>"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/31658#comment
+status: Solved
+record: -1
+custom_name: Defining Basic Double & Triple Functions
+local_check: false

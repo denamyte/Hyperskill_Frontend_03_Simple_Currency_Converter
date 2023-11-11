@@ -1,0 +1,1 @@
+const returnNumber = a => a
