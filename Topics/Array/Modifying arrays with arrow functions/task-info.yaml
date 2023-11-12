@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "<pre><code class=\"language-js\">let modifyArray = arr =&gt; { arr.pop();\
+    \ arr.push(5, 6); return arr; };</code></pre>"
+  - text: "<pre><code class=\"language-js\">let modifyArray = arr =&gt; { arr.shift();\
+    \ arr.push(5, 6); return arr; };</code></pre>"
+  - text: "<pre><code class=\"language-js\">let modifyArray = arr =&gt; { arr.shift();\
+    \ arr.append(5, 6); return arr; };</code></pre>"
+  - text: "<pre><code class=\"language-js\">let modifyArray = arr =&gt; { arr.unshift();\
+    \ arr.push(5, 6); return arr; };</code></pre>"
+  - text: "<pre><code class=\"language-js\">let modifyArray = arr =&gt; { arr.splice(0,1);\
+    \ arr.push(5, 6); return arr; };</code></pre>"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32364#comment
+status: Solved
+record: -1
+local_check: false

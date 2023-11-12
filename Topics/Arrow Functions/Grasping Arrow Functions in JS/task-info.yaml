@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "<pre><code class=\"language-javascript\">let add = (a, b) =&gt; a + b;</code></pre>"
+  - text: "<pre><code class=\"language-javascript\">let square = a =&gt; { return a\
+    \ * a }</code></pre>"
+  - text: "<pre><code class=\"language-javascript\">(a,b) =&gt; a*b;</code></pre>"
+  - text: "<pre><code class=\"language-javascript\">let multiply = (a, b) =&gt; return\
+    \ a * b;</code></pre>"
+  - text: "<pre><code class=\"language-javascript\">let findMax = (numbers) =&gt; {\
+    \ let max = Math.max(...numbers); return max; }</code></pre>"
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/31718#comment
+status: Unchecked
+record: -1
+local_check: false
