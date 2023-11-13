@@ -13,3 +13,6 @@ content:
   - Array creation
   - Object iterator
   - Object methods and keyword  this
+  - ForEach method
+  - Increment and Decrement
+  - Loops  for and for...in

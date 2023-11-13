@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: It iterates through the elements according to their order
+  - text: It helps to sort the objects
+  - text: It is used for performing similar operations
+  - text: There must be at least two functions as callbacks
+  - text: It helps to iterate over the arrays
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10137#comment
+status: Solved
+record: -1
+local_check: false
