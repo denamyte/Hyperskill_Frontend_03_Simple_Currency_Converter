@@ -120,7 +120,10 @@ files:
       if __name__ == '__main__':
           CurrencyConverter('main').run_tests()
     learner_created: false
-feedback_link: https://hyperskill.org/projects/231/stages/1158/implement#comment
+feedback_link: https://hyperskill.org/learn/step/17898#comment
 check_profile: hyperskill_node_javascript
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 13 Nov 2023 23:39:52 UTC"
 record: -1

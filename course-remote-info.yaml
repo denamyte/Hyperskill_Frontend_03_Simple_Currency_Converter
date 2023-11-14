@@ -3,14 +3,14 @@ hyperskill_project:
   ide_files: https://cogniterra.org/media/attachments/lesson/26275/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Mon, 13 Nov 2023 16:00:35 UTC"
+update_date: "Mon, 13 Nov 2023 23:15:43 UTC"
 stages:
   - id: 1157
     step: 17897
-    is_completed: false
+    is_completed: true
   - id: 1158
     step: 17898
-    is_completed: false
+    is_completed: true
   - id: 1159
     step: 17899
     is_completed: false
@@ -70,7 +70,7 @@ topics:
       theory_id: 9746
     - title: Defining functions
       theory_id: 24012
-    - title: Anonymous Function
+    - title: Anonymous function
       theory_id: 26924
     - title: Arrow Functions
       theory_id: 8455
@@ -86,7 +86,7 @@ topics:
       theory_id: 10133
     - title: Increment and Decrement
       theory_id: 9102
-    - title: For Loops
+    - title: "Loops: for and for...in"
       theory_id: 9119
     - title: CommonJS modules
       theory_id: 23897
@@ -97,10 +97,10 @@ topics:
     - title: String transforming
       theory_id: 17779
   2:
-    - title: Switch
+    - title: Multiple conditions. Switch...case statement
       theory_id: 10689
   3:
-    - title: While Loops
+    - title: "Loops: while and do...while"
       theory_id: 9128
-    - title: Break and Continue
+    - title: Break and continue statements
       theory_id: 9374
