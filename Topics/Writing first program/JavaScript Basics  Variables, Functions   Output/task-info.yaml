@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: The code outputs the value of &#x27;result&#x27; to the console
+  - text: The code uses a loop to calculate the sum of the two numbers
+  - text: "The code calls the &#x27;sum&#x27; function with arguments 5 and 10, storing\
+    \ the result in the &#x27;result&#x27; variable"
+  - text: The code declares a constant variable &#x27;x&#x27; with a value of 5
+  - text: The code declares a function &#x27;sum&#x27; that takes two arguments and
+      returns their product
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/30044#comment
+status: Solved
+record: -1
+custom_name: "JavaScript Basics: Variables, Functions & Output"
+local_check: false

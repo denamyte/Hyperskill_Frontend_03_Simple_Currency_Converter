@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: This code would cause an error because &#x27;number&#x27; is a reserved keyword
+      in JavaScript.
+  - text: This code would cause an error because the &#x27;console.log&#x27; function
+      is not properly defined.
+  - text: The semicolon at the end of each line denotes the end of a statement.
+  - text: The &#x27;console.log&#x27; function is being used to output the value of
+      &#x27;number&#x27; to the console.
+  - text: The variable &#x27;number&#x27; is being declared and initialized with a value
+      of 5.
+files:
+  - name: main.js
+    visible: true
+    text: |+
+      // You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/30980#comment
+status: Solved
+record: -1
+local_check: false
