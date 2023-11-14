@@ -15,13 +15,15 @@ const intro = () => {
     for (let cur in CUR_MAP) {
         printUsdToCurrency(CUR_MAP[cur], cur);
     }
-    console.log("I can convert USD to these currencies: JPY, EUR, RUB, USD, GBP");
-    console.log("Type the currency you wish to convert: USD");
+    console.log("What do you want to convert?");
 }
 
-const inputToCur = () => input("To: ").toUpperCase()
+const inputFT2 = msg => {
+    const cur = input(msg).toUpperCase();
+    return check.isCurrency(Object.keys(CUR_MAP), cur) && cur
+};
 
-const inputAmount = () => Number(input("Amount: "))
+const inputAmount = () => Number(input("Amount: "));
 
 const check = {
     check: (res, error) => {
@@ -41,30 +43,29 @@ const check = {
         return this.check(
             num >= 1,
             "The amount cannot be less than 1"
-        )
+        );
     },
 
     isCurrency(curList, cur) {
         return this.check(
             curList.includes(cur),
             "Unknown currency"
-        )
+        );
     },
-}
+};
 
 function convert(fromCur, toCur, amount) {
-    return (amount / CUR_MAP[fromCur] * CUR_MAP[toCur]).toFixed(4)
+    return (amount / CUR_MAP[fromCur] * CUR_MAP[toCur]).toFixed(4);
 }
 
 function main() {
     intro();
-    const fromCur = 'USD'
-    const toCur = inputToCur();
-    if (!check.isCurrency(Object.keys(CUR_MAP), toCur))
-        return;
+    const fromCur = inputFT2("From: ");
+    if (!fromCur) return;
+    const toCur = inputFT2("To: ");
+    if (!toCur) return;
     const amount = inputAmount();
-    if (!check.isLT1(amount))
-        return;
+    if (!check.isLT1(amount)) return;
     const resAmount = convert(fromCur, toCur, amount)
     console.log(`Result: ${amount} ${fromCur} equals ${resAmount} ${toCur}`)
 }
