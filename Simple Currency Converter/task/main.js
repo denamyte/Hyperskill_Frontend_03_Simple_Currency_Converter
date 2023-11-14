@@ -18,13 +18,6 @@ const intro = () => {
     console.log("What do you want to convert?");
 }
 
-const inputFT2 = msg => {
-    const cur = input(msg).toUpperCase();
-    return check.isCurrency(Object.keys(CUR_MAP), cur) && cur
-};
-
-const inputAmount = () => Number(input("Amount: "));
-
 const check = {
     check: (res, error) => {
         if (!res) console.log(error);
@@ -54,15 +47,22 @@ const check = {
     },
 };
 
+const inputFT = msg => {
+    const cur = input(msg).toUpperCase();
+    return check.isCurrency(Object.keys(CUR_MAP), cur) && cur
+};
+
+const inputAmount = () => Number(input("Amount: "));
+
 function convert(fromCur, toCur, amount) {
     return (amount / CUR_MAP[fromCur] * CUR_MAP[toCur]).toFixed(4);
 }
 
 function main() {
     intro();
-    const fromCur = inputFT2("From: ");
+    const fromCur = inputFT("From: ");
     if (!fromCur) return;
-    const toCur = inputFT2("To: ");
+    const toCur = inputFT("To: ");
     if (!toCur) return;
     const amount = inputAmount();
     if (!check.isLT1(amount)) return;
